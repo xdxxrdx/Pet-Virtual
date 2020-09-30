@@ -3,9 +3,18 @@ class bichinho:
     idade = 0
     saude = 50
     fome = 50
+    status = saude - (fome/2)
+    if status >= 25:
+        humor = 'Feliz'
+        print(humor)
 
-    def __init__(self, humor = None):
-        humor = (bichinho.saude + bichinho.fome) / 4
+    elif status < 25:
+        humor = 'Triste'
+        print(humor)
+
+
+    def __init__(self):
+        pass
 
 
     def alimentar(self=None, fome=None):
@@ -45,6 +54,10 @@ class bichinho:
             print('Número inválido')
 
 
+
+
+
+
 nome = bichinho()
 
 interface = True
@@ -52,6 +65,7 @@ interface = True
 while interface:
     print('')
     print(bichinho.nome, 'está com', bichinho.idade, 'anos!')
+    print(bichinho.nome, 'está', bichinho.humor)
     print('')
     print('''DIGITE:
 1 - para alimentar
