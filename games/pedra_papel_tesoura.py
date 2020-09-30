@@ -1,6 +1,6 @@
 import random
 
-class jogo_da_velha():
+class PedraPapelETesoura():
     ponto_do_pc = 0
     ponto_do_usuario = 0
     PEDRA = 1
@@ -38,7 +38,7 @@ while a:
     3 - TESOURA
     4 - SAIR''')
 
-    print('Pontos do bichinho:', jogo_da_velha.ponto_do_pc, 'Pontos do usuário:', jogo_da_velha.ponto_do_usuario)
+    print('Pontos do bichinho:', PedraPapelETesoura.ponto_do_pc, 'Pontos do usuário:', PedraPapelETesoura.ponto_do_usuario)
 
     resposta = int(input('Insira um número'))
 
@@ -48,40 +48,40 @@ while a:
     if resposta_do_computador == 1 and resposta == 1:
         print(escolhapc)
         print('Empate')
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
 
     elif resposta_do_computador ==1 and resposta ==2:
         print(escolhapc)
-        jogo_da_velha.ponto_do_usuario += 1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_usuario += 1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 1 and resposta == 3:
         print(escolhapc)
-        jogo_da_velha.ponto_do_pc += 1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_pc += 1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 2 and resposta == 1:
         print(escolhapc)
-        jogo_da_velha.ponto_do_pc += 1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_pc += 1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 2 and resposta == 2:
         print(escolhapc)
         print('Empate')
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador== 2 and resposta == 3:
         print(escolhapc)
-        jogo_da_velha.ponto_do_usuario += 1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_usuario += 1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 3 and resposta == 1:
         print(escolhapc)
-        jogo_da_velha.ponto_do_usuario +=1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_usuario +=1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 3 and resposta == 2:
         print(escolhapc)
-        jogo_da_velha.ponto_do_pc += 1
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        PedraPapelETesoura.ponto_do_pc += 1
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
     elif resposta_do_computador == 3 and resposta == 3:
         print(escolhapc)
         print('Empate')
-        print('Bichinho:', jogo_da_velha.ponto_do_pc, 'Você:', jogo_da_velha.ponto_do_usuario)
+        print('Bichinho:', PedraPapelETesoura.ponto_do_pc, 'Você:', PedraPapelETesoura.ponto_do_usuario)
 
     elif resposta == 4:
         break
@@ -90,4 +90,4 @@ while a:
         print('Número inválido')
 
 if __name__ == '__main__':
-    jogo_da_velha()
+    PedraPapelETesoura()

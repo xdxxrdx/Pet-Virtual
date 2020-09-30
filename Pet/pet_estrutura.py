@@ -55,7 +55,8 @@ while interface:
     print('')
     print('''DIGITE:
 1 - para alimentar
-2 - para jogar 'Jogo da velha''')
+2 - para jogar Pedra, papel e tesoura
+3 - para jogar o Jogo do Balde''')
     ok = int(input('Insira o numero'))
     bichinho.idade +=1
     bichinho.fome -=1
@@ -64,5 +65,9 @@ while interface:
         bichinho.alimentar()
 
     elif ok ==2:
-        from games import jogo_da_velha
-        jogo_da_velha.jogo_da_velha
+        from games import pedra_papel_tesoura
+        pedra_papel_tesoura.PedraPapelETesoura()
+
+    elif ok == 3:
+        from games import jogo_do_balde
+        jogo_do_balde.JogoDoBalde()
